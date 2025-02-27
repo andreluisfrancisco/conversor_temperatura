@@ -5,17 +5,14 @@
 #include <stdexcept>
 using namespace std;
 
-// Função para converter Celsius para Fahrenheit
 float converterCelsiusParaFahrenheit(float celsius) {
     return (celsius * 9/5) + 32;
 }
 
-// Função para converter Fahrenheit para Celsius
 float converterFahrenheitParaCelsius(float fahrenheit) {
     return (fahrenheit - 32) * 5/9;
 }
 
-// Função para solicitar e validar a opção de conversão
 int obterOpcaoDeConversao() {
     int opcao;
     cout << "Escolha o tipo de conversao: " << endl;
@@ -33,7 +30,6 @@ int obterOpcaoDeConversao() {
     return opcao;
 }
 
-// Função para solicitar e validar a temperatura
 float obterTemperatura() {
     string temperatura_str;
     cout << "Digite a temperatura (use ponto como separador decimal): ";
